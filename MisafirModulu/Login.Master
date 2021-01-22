@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="Kutuphane.MisafirModulu.Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+
+        .auto-style3 {
+            width: 800px;
+            height: 48px;
+        }
+
+        .auto-style4 {
+            height: 46px;
+        }
+
+        .auto-style5 {
+            text-decoration: none;
+        }
+
+        .auto-style6 {
+            color: #FFFFFF;
+        }
+
+        .auto-style7 {
+            font-weight: normal;
+            color: #FFFFFF;
+        }
+
+        </style>
+</head>
+<body style="background-image: url('arkaPlan2.jpg');">
+    <form id="form1" runat="server">
+        <div id="baslikDiv" style="background-color: #6a2c70; width: 800px; height: 86px; margin-left: 300px; margin-right: 50px; color: #eeecda; font-size: 70px;" class="auto-style1">
+            Kütüphane
+        </div>
+        <div id="menüDiv" style="width: 800px; margin-left: 300px; height: 50px; margin-right: 50px; margin-top: 20px;">
+            <table class="auto-style3">
+                <tr>
+                    <td aria-checked="undefined" class="auto-style4" style="background-color: #b83b5e;">
+                        <h3 class="auto-style1">
+                            <a href="MisafirAnaSayfasi.aspx" class="auto-style5"><span class="auto-style6">Ana Sayfa</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style4" style="background-color: #b83b5e;">
+                        <h3 class="auto-style1">
+                            <a href="Hakkimizda.aspx" class="auto-style5"><span class="auto-style6">Hakkımızda</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style4" style="background-color: #b83b5e;">
+                        <h3 class="auto-style1">
+                            <a href="UyeLogin.aspx" class="auto-style5"><span class="auto-style6">Üye Girişi</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style4" style="background-color: #b83b5e;">
+                        <h3 class="auto-style1">
+                            <a href="YoneticiLogin.aspx" class="auto-style5"><span class="auto-style7">Yönetici Girişi</span></a></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="anaDiv" style="margin-left: 300px; margin-right: 50px; margin-top: 20px; width: 800px; background-color: #f08a5d; height: 600px;">
+                <asp:ContentPlaceHolder ID="erisilir" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

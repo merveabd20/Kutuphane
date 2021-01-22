@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Misafir.master.cs" Inherits="Kutuphane.MisafirModulu.Misafir" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+
+        .auto-style2 {
+            width: 100%;
+        }
+
+        .auto-style5 {
+            background-color: #f08a5d;
+            color: #eeecda;
+            text-align: center;
+            height: 28px;
+        }
+
+        .auto-style6 {
+            margin-left: 19px;
+            margin-top: 18px;
+        }
+
+        .auto-style9 {
+            width: 800px;
+            height: 133px;
+        }
+
+        .auto-style10 {
+            text-align: right;
+        }
+
+        .auto-style11 {
+            width: 800px;
+            height: 279px;
+        }
+
+        .auto-style14 {
+            width: 450px;
+            height: 267px;
+        }
+
+        .auto-style15 {
+            width: 268px;
+            text-align: center;
+            margin-left: 6px;
+        }
+
+        .auto-style16 {
+            float: left;
+            width: 300px;
+            height: 266px;
+        }
+        .auto-style17 {
+            text-decoration: none;
+        }
+        .auto-style18 {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body style="background-image: url('arkaPlan2.jpg');">
+    <link href="Tasarim.css" rel="stylesheet" />
+    <form id="form1" runat="server">
+        <div id="baslikDiv" style="background-color: #6a2c70; width: 800px; height: 86px; margin-left: 300px; margin-right: 50px; color: #eeecda; font-size: 70px;" class="auto-style1">
+            Kütüphane
+        </div>
+        <div id="menüDiv" style="width: 800px; margin-left: 300px; margin-right: 50px; margin-top: 20px;">
+            <table class="auto-style2">
+                <tr>
+                    <td aria-checked="undefined" class="auto-style5" style="background-color: #b83b5e;">
+                        <h3>
+                        <a href="MisafirAnaSayfasi.aspx" class="auto-style17"><span class="auto-style18">Ana Sayfa</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style5" style="background-color: #b83b5e;">
+                        <h3>
+                        <a href="Hakkimizda.aspx" class="auto-style17"><span class="auto-style18">Hakkımızda</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style5" style="background-color: #b83b5e;">
+                        <h3>
+                        <a href="UyeLogin.aspx" class="auto-style17"><span class="auto-style18">Üye Girişi</span></a></h3>
+                    </td>
+                    <td aria-checked="undefined" class="auto-style5" style="background-color: #b83b5e;">
+                        <h3>
+                        <a href="YoneticiLogin.aspx" class="auto-style17"><span class="auto-style18">Yönetici Girişi</span></a></h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="aramaDiv" style="background-color: #f08a5d; margin-top: 20px; margin-left: 300px; margin-right: 50px; color: #eeecda;" class="auto-style9">
+            <div>
+                <asp:TextBox ID="aramaTextBox" runat="server" CssClass="auto-style6" Height="16px" Width="752px"></asp:TextBox>
+            </div>
+            <div style="margin-top: 20px;">
+
+
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style10">
+                            <asp:Button ID="araButton" runat="server" Text="Kitap Ara" Width="142px" CssClass="button" OnClick="araButton_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">
+                            <asp:Button ID="listeleButton" runat="server" Width="142px" Text="Kitapları Listele" CssClass="button" OnClick="listeleButton_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="grupDiv" style="margin-top: 20px; margin-left: 300px; margin-right: 50px;" class="auto-style11">
+            <div id="duyuruDiv" style="background-color: #b83b5e; height:auto; color: #eeecda;" class="auto-style16">
+                <div style="margin-top: 10px;">
+                    <h2 class="auto-style15">&nbsp; Duyurular</h2>
+                </div>
+                <div style="margin-top:20px;">
+
+                    <asp:DataList ID="list0" runat="server" style="margin-left:20px; margin-bottom:20px;" BackColor="#f08a5d" BorderColor="#f08a5d" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                        <FooterStyle BackColor="#6a2c70" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#6a2c70" Font-Bold="True" ForeColor="White" />
+                        <ItemStyle BackColor="#6a2c70" ForeColor="#333333" />
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("metin") %>' ForeColor="#EEECDA"></asp:Label>
+                        </ItemTemplate>
+                        <SelectedItemStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    </asp:DataList>
+
+                </div>
+            </div>
+            <div id="islemDiv" style="background-color: #f08a5d; color: #eeecda; height:auto; margin-left: 350px;" class="auto-style14">
+                <div style="margin-top: 20px; margin-left: 20px; text-align:center">
+                    <h2>Kitaplar</h2>
+                </div>
+                <div id="yaz" style="margin-top:20px; margin-left:20px; margin-bottom:20px;">
+
+                    <asp:Label ID="yazLabel" runat="server" ></asp:Label>
+
+                </div>
+                <div style="margin-top: 20px;">
+
+                    <asp:DataList ID="list" runat="server" style="margin-left:20px; margin-bottom:20px;" BackColor="#6a2c70" BorderColor="#b83b5e" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
+                        <FooterStyle BackColor="White" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#6a2c70" Font-Bold="True" ForeColor="White" />
+                        <ItemStyle BackColor="#6a2c70" ForeColor="#333333" />
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("kitapAdi") %>' ForeColor="#EEECDA"></asp:Label>
+                        </ItemTemplate>
+                        <SelectedItemStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    </asp:DataList>
+
+                </div>
+                <div>&nbsp</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

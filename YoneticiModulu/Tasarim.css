@@ -1,0 +1,41 @@
+﻿.label {
+    color: #eeecda;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.texBox {
+    width: 180px;
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+.button {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #eeecda;
+    background-color: #6a2c70;
+    margin-top: 20px;
+    margin-left: 285px;
+    margin-bottom: 20px;
+}
+.button2 {
+    width: 129px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #eeecda;
+    background-color: #6a2c70;
+
+
+}
+.Margin {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

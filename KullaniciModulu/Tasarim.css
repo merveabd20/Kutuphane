@@ -1,0 +1,77 @@
+﻿.baslikDiv {
+    background-color: #6a2c70;
+    width: 800px;
+    height: 86px;
+    margin-left: 300px;
+    color: #eeecda;
+    font-size: 70px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.menuDiv {
+    background-color: #b83b5e;
+    width: 800px;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.tablo {
+    width: 100%;
+    height: 100%;
+}
+
+.linkLabel {
+    text-align: center;
+    color: #eeecda;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icerikDiv {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 300px;
+    background: #f08a5d;
+    height: auto;
+    width: 800px;
+}
+
+.label {
+    color: #eeecda;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.td {
+    text-align: right;
+    width: 50%;
+}
+
+.texBox {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.button {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #eeecda;
+    background-color: #6a2c70;
+    margin-top:20px;
+    margin-left:285px;
+    margin-bottom:20px;
+}
+
+.Margin{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}

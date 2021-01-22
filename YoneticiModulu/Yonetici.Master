@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Yonetici.master.cs" Inherits="Kutuphane.Yonetici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 164px;
+            height: 274px;
+            text-decoration: underline;
+            color: #CCCCCC;
+        }
+
+        .auto-style2 {
+            text-align: center;
+            font-size: large;
+        }
+
+        .auto-style3 {
+            width: 164px;
+            height: 274px;
+            text-align: center;
+        }
+
+        .auto-style4 {
+            width: 575px;
+            height: 524px;
+        }
+
+        .auto-style5 {
+            width: 799px;
+            height: 587px;
+        }
+
+        .auto-style6 {
+            text-decoration: none;
+        }
+
+        .auto-style7 {
+            color: #FFFFFF;
+            font-size: large;
+        }
+    </style>
+</head>
+<body style="background-image: url('arkaPlan2.jpg');">
+    <form id="form1" runat="server">
+        <div id="baslikDiv" style="background-color: #6a2c70; width: 800px; height: 86px; margin-left: 300px; margin-right: 50px; color: #eeecda; font-size: 70px;" class="auto-style3">
+            Kütüphane
+        </div>
+        <div id="grup" style="margin-left: 300px; margin-right: 20px; margin-top: 50px;" class="auto-style5">
+            <div id="menuDiv" style="background-color: #b83b5e; width: 165px; height: auto; float: left; color: #eeecda;">
+                <table class="auto-style1" style="align-content: center;">
+                    <tr>
+                        <td class="auto-style2"><a href="YazarIslemleriSayfasi.aspx" class="auto-style6"><span class="auto-style7">Yazar İşlemleri</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2"><a href="KitapIslemleriSayfasi.aspx" class="auto-style6"><span class="auto-style7">Kitap İşlemleri</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2"><a href="EmanetIslemleriSayfasi.aspx" class="auto-style6"><span class="auto-style7">Emanet İşlemleri</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2"><a href="UyeIslemleriSayfasi.aspx" class="auto-style6"><span class="auto-style7">Üye İşlemleri</span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2"><a href="DuyuruIslemleriAnaSayfa.aspx" class="auto-style6"><span class="auto-style7">Duyuru İşlemleri</span></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="islemDiv" style="background-color: #f08a5d; height: auto; margin-left: 221px; color: #eeecda;" class="auto-style4">
+                <asp:ContentPlaceHolder ID="erisilir" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

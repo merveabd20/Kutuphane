@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Uye.master.cs" Inherits="Kutuphane.KullaniciModulu.Uye" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Tasarim.css" rel="stylesheet" />
+    <title>Üye Sayfası</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="anaDiv">
+            <div id="baslikDiv" class="baslikDiv">Kütüphane</div>
+        </div>
+        <div id="menüDiv" class="menuDiv">
+            <table class="tablo">
+                <tr>
+                    <td >
+                        <asp:LinkButton ID="LinkButton4" runat="server" CssClass="linkLabel" OnClick="LinkButton4_Click">Kitaplar</asp:LinkButton>
+                    </td>
+                    <td>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="linkLabel" OnClick="LinkButton1_Click">Beğenilen Kitaplar</asp:LinkButton>
+                    </td>
+                    <td>
+                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="linkLabel" OnClick="LinkButton2_Click">Alınan Kitaplar</asp:LinkButton>
+                    </td>
+                    <td>
+                        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="linkLabel" OnClick="LinkButton3_Click">Hesap Ayarları</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="icerikDiv" class="icerikDiv">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
